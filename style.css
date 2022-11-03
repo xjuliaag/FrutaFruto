@@ -1,0 +1,265 @@
+
+/* ---------------HEADER-INICIO--------------- */
+.cabecalho {
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem 0 2rem;
+}
+
+
+.menu__lista {
+    display: flex;
+    font-size: 50%w;
+}
+
+.menu__item {
+    list-style: none;
+}
+
+.menu__item:last-child a{
+    margin-right: 0;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: #808080;
+    margin-right: 1.25rem;
+    text-transform: uppercase
+}
+
+.menu__link.active {
+    color: black;
+    font-weight: bold;
+}
+
+.menu__link:hover {
+    text-decoration: underline;
+}
+/* ---------------HEADER-FIM--------------- */
+/* ---------------BANNER-INICIO--------------- */
+.banner {
+    position: relative;
+}
+
+.banner__imagem {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner__titulo {
+    font-family: Pacifico, cursive;
+    color: white;
+    font-size: 5vw;
+    position: absolute;
+    left: 50%;
+    text-shadow: 0 6px 6px rgba(0, 0, 0, 0.863);
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+/* ---------------BANNER-FIM--------------- */
+/* ---------------SOBRE-INICIO--------------- */
+.sobre {
+    padding: 3rem;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.sobre__titulo { 
+    font-family: Pacifico, cursive;
+    font-size: 2.5rem;
+    color: #8d0606;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.705);
+    
+
+}
+
+.sobre__descricao {
+    color: #353535;
+    font-size: 2rem;
+    font-weight: 300;
+}
+/* ---------------SOBRE-FIM--------------- */
+/* ---------------RECEITAS-INICIO--------------- */
+.receitas {
+    background-color: #e5e5e5;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem 0 0 5rem;
+    justify-content: center;
+}
+
+.receita {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    margin: 0 5rem 5rem 0;
+    width: 30vh;
+}
+
+.receita__imagem {
+    height: 250px;
+    
+}
+
+.receita__titulo {
+    font-size: 1.4375rem;
+    text-align: center;
+}
+
+.receita__descricao {
+    font-size: 1.1875rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.receita__conteudo {
+    padding: 1rem;
+}
+
+.receita__botao {
+    background-color: #8d0606;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.receita__botao:hover {
+    background-color: #580202;
+}
+/* ---------------RECEITAS-FIM--------------- */
+/* ---------------QUEM-SOMOS-INICIO--------------- */
+
+.quem-somos {
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 4rem;
+}
+
+.quem-somos__titulo {
+    color: #8d0606;
+    font-family: Pacifico, cursive;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.quem-somos__descricao {
+    color: #353535;
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+.pessoas {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.pessoa {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.pessoa__imagem {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.pessoa__imagem--roberta {
+    background-image: url("../img/pessoas/roberta.jpg");
+}
+
+.pessoa__imagem--marcela {
+    background-image: url("../img/pessoas/marcela.jpg");
+}
+
+.pessoa__imagem--andreia {
+    background-image: url("../img/pessoas/andreia.jpg");
+}
+
+.pessoa__nome {
+    color: #8d0606;
+    font-family: Pacifico, cursive;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.pessoa__funcao {
+    color: #353535;
+    font-size: 1rem;
+    text-transform: lowercase;
+}
+/* ---------------QUEM-SOMOS-FIM--------------- */
+/* ---------------FOOTER-INICIO--------------- */
+
+.rodape {
+    background-color: #580202;
+    color: #e5e5e5;
+    text-align: right;
+    padding: 1.5rem 5rem;
+    text-transform: lowercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* ---------------FOOTER-FIM--------------- */
+
+
+@media (max-width:768px) {
+    .logo {
+        display: none;
+    }
+
+    .cabecalho{
+        justify-content: center;
+        padding: 0 1rem;
+    }
+
+    .banner {
+        position: relative;
+    }
+
+    .banner__titulo {
+        font-size: 2.2rem;
+    }
+
+    .banner__imagem {
+        height: 70vw;
+    }
+
+    .sobre {
+        padding: 2.5rem 1rem;
+    }
+
+    .sobre__titulo, .quem-somos__titulo {
+        font-size: 2rem;
+    }
+
+    .sobre__descricao, .quem-somos__descricao {
+        font-size: 1.3rem;
+    }
+
+    .pessoa {
+        margin-bottom: 30px;
+    }
+
+    .rodape {
+        text-align: center;
+
+    }
+
+}
